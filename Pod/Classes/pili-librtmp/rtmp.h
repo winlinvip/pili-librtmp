@@ -358,7 +358,6 @@ int PILI_RTMP_HashSWF(const char *url, unsigned int *size, unsigned char *hash,
 
 /* 
  ***********************************************************************
-<<<<<<< HEAD
  * Introduced by SRS, export the ip/pid/cid of BMS
  ***********************************************************************
  */
@@ -397,6 +396,11 @@ extern unsigned long _srs_rbytes;
  *      skbps = sbytes * 8 / 1000 / (diff seconds)
  */
 extern unsigned long _srs_sbytes;
+/*
+ * The current state of client.
+ *  0,idle 1,connected 2,working 3,closed
+ */
+extern int _srs_state;
 
 #ifdef __cplusplus
 };
